@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ATM</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1 class="title">ATM</h1>
+        <form class="form">
+          <div class="cassette">
+            <h2 class="cassette_title">Выберите колличество кассет:</h2>
+
+            <div class="cassette_choice">
+              <label for="cassetteCount" class="sr-only">Колличество</label>
+              <select id="cassetteCount">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="settings">
+            <div class="settings_cassette">
+              <p class="settings_title">Номер</p>
+            </div>
+
+            <div class="settings_value">
+              <p class="settings_title">Номинал</p>
+
+              <div class="cassette_choice">
+              </div>
+            </div>
+
+            <div class="settings_remainder">
+              <p class="settings_title">Остаток</p>
+            </div>
+
+            <div class="settings_status">
+              <p class="settings_title">Статус</p>
+
+              <div class="cassette_choice settings_status_input">
+              </div>
+            </div>
+          </div>
+
+          <div class="money_count">
+            <p class="money_count_title">Введите сумму:</p>
+            <label for="inputSum" class="sr-only">Сумма</label>
+            <input
+              type="number"
+              id="inputSum"
+              min="0"
+              step="100"
+              pattern="^[0-9]+$"
+            />
+            <button class="money_count_btn">Выдать</button>
+          </div>
+        </form>
+
+        <div class="result"></div>
+      </div>
+      </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
