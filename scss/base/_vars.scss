@@ -1,0 +1,68 @@
+// color
+$border: solid #232121;
+$white: rgba(245, 240, 240, 0.973);
+
+// size
+$mb: 25px;
+$mb_large: 35px;
+
+$br: 10px;
+$br_large: 25px;
+
+// Mixins
+@mixin animation {
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+// Media
+$laptop: 1280px;
+@mixin mediaLaptop {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+
+$laptop2: 1024px;
+@mixin mediaLaptop2 {
+    @media screen and (max-width: $laptop2) {
+        @content;
+    }
+}
+
+$tablet: 715px;
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+$tablet2: 570px;
+@mixin mediaTablet2 {
+    @media screen and (max-width: $tablet2) {
+        @content;
+    }
+}
+
+$tablet3: 509px;
+@mixin mediaTablet3 {
+    @media screen and (max-width: $tablet3) {
+        @content;
+    }
+}
+
+$phone: 433px;
+@mixin mediaPhone {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+
+
+
+
+
