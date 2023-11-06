@@ -124,7 +124,7 @@ function isAvailableToDispense(inputSum) {
   const endTime = new Date().getTime();
   const totalTime = endTime - startTime;
 
-  renderResult(subsets, totalTime);
+  renderResult(subsets, totalTime, inputSum);
 }
 
 function getSubsetsForSum(banknotesArr, inputSum) {
